@@ -9,9 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="container mx-auto">
+<body class="">
     <!-- header -->
-    <header>
+    <header class="container mx-auto">
         <div class="flex max-md:flex-col-reverse max-md:text-center justify-between items-center my-20 px-2">
             <div class="max-md:mt-5">
                 <h1 class="text-7xl max-md:text-4xl font-extrabold leading-snug">
@@ -42,7 +42,7 @@
         </div>
     </header>
     <!-- main -->
-    <main>
+    <main class="container mx-auto">
         <!-- featured products -->
         <section class="my-24">
             <h1 class="text-5xl font-bold text-center">Our Featured Products</h1>
@@ -175,7 +175,9 @@
         <!-- news and events -->
         <section class="my-20">
             <h1 class="text-5xl font-bold text-center leading-normal">News & Events</h1>
-            <p class="text-lg md:w-3/5 text-center mx-auto leading-7 mt-10 mb-20">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <p class="text-lg md:w-3/5 text-center mx-auto leading-7 mt-10 mb-20">There are many variations of passages
+                of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                randomised words which don't look even slightly believable.</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-md:m-2">
                 <div class="p-5 border rounded-xl mx-auto">
                     <img src="images/news-1.png" alt="">
@@ -202,8 +204,60 @@
         </section>
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="bg-gradient-to-r from-[#FF0000] to-[#FF8938]">
+        <div>
+            <div class="container mx-auto mt-20 max-md:text-center pt-28 text-white">
+                <div class="flex max-md:flex-col justify-between items-center mb-20">
+                    <img class="max-md:mb-5 " src="images/cup.png" alt="">
+                    <div class="flex space-x-5 items-center">
+                        <p>Ready to get started?</p>
+                        <button
+                            class=" bg-gradient-to-r from-[#FF8938] to-[#FF0F00] text-white font-medium py-3 px-5 rounded-lg space-x-2 shadow-xl">Get
+                            Started
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-40 gap-y-14">
+                    <div class="flex flex-col">
+                        <h4 class="text-xl font-extrabold">Quick Links</h4>
+                        <a class="my-2.5" href="#">Home</a>
+                        <a class="my-2.5" href="#">About Us</a>
+                        <a class="my-2.5" href="#">Insurance</a>
+                        <a class="my-2.5" href="#">Privacy Policy</a>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="text-xl font-extrabold">Our Services</h4>
+                        <a class="my-2.5" href="#">Life Insurance</a>
+                        <a class="my-2.5" href="#">Car Insurance</a>
+                        <a class="my-2.5" href="#">Health Insurance</a>
+                        <a class="my-2.5" href="#">House Insurance</a>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="text-xl font-extrabold">Help</h4>
+                        <a class="my-2.5" href="#">FAQs</a>
+                        <a class="my-2.5" href="#">Contact Us</a>
 
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="text-xl font-extrabold">Subscribe to our <br>newsletter</h4>
+                        <div class="flex items-center max-md:mx-auto space-x-2 py-2.5">
+                            <input class="placeholder-white focus:outline-none border-b-2 border-slate-300 p-2 rounded-lg bg-[#FF7630]"
+                                placeholder="enter your email" />
+                            <button
+                                class=" bg-gradient-to-r from-[#FF8938] to-[#FF0F00] text-white font-medium p-1 rounded-full space-x-2 shadow-2xl"><img
+                                    src="images/Frame 4140.svg" alt="">
+                        </div>
+                        </button>
+                        <div class="flex space-x-5 max-md:mx-auto my-2.5">
+                            <a href="#"><img src="images/fb.svg" alt=""></a>
+                            <a href="#"><img src="images/x.svg" alt=""></a>
+                            <a href="#"><img src="images/ins.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center font-medium py-14">&copy 2023 Rijwanul Alam - All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
